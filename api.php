@@ -24,7 +24,7 @@ ini_set( 'display_errors', false );
 header( 'Content-Type: application/json; charset=utf-8' );
 
 // constants
-define( 'API_KEY', 'YOUR_API_KEY' );
+define( 'API_KEY', 'YOUR_API_KEY_HERE' );
 
 if( empty( $_POST ) ) {
     $error = array(
@@ -78,10 +78,10 @@ if( empty( $_POST ) ) {
         $to         = $_POST['mailTo'];
         
         // the e-mail message
-        $message = $mailText;
+        $message = $_POST['mailText'];
         
         // the e-mail mail headers
-        $headers = "From: ".$mailFrom."\r\n";
+        $headers = "From: ".$from."\r\n";
         $headers .= "Reply-To: ".$mailReplyTo."\r\n";
         $headers .= "X-Mailer: PHP/" . phpversion();
         
