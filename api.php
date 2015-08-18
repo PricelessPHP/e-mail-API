@@ -1,6 +1,6 @@
 <?php
 /**
- * Priceless PHP Base
+ * Priceless PHP
  * e-mail API
  *
  * @author      BizLogic <hire@bizlogicdev.com>
@@ -14,7 +14,7 @@
  * @version     $Id$
  *
  * @category    API
- * @package     Priceless PHP Base
+ * @package     Priceless PHP e-mail API
 */
  
 error_reporting( E_ALL );
